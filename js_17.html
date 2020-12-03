@@ -1,0 +1,49 @@
+<!-- 
+~~~~~~~~~~~~~~~~~
+js_17.html
+~~~~~~~~~~~~~~~~~
+ -->
+
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+		
+
+
+		var num = 5;
+
+
+		function timer(){
+
+				window.setTimeout('location.replace("http://www.naver.com");',5000
+				);
+
+			document.getElementById("second").innerHTML = 
+				"초 후에 NAVER로 이동";
+		}
+
+		function startTime(){
+				window.setInterval( 
+					
+					function(){
+					
+						timer();
+
+					} 
+					, 1*1000
+				);
+		}
+
+	</script>
+</head>
+<body onload="timer();"><center>
+
+
+	<span id="second"></span>
+
+</body>
+</html>
